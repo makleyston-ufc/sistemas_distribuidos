@@ -3,10 +3,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
-import java.util.Scanner;
 import java.awt.event.*;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
 
 public class CalculadoraClientSocket {
 
@@ -26,7 +23,7 @@ public class CalculadoraClientSocket {
             public void actionPerformed(ActionEvent evt) {
                 oper1 = calc.getOper1();
                 oper2 = calc.getOper2();
-                operacao = calc.getOperacao();
+                operacao = calc.getOperacao(); //1-somar 2-subtrair 3-multiplicar 4-dividir
 
                 calc.resetVariaveis();
 
