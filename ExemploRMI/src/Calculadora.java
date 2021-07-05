@@ -1,9 +1,5 @@
-import java.io.*;
-import java.nio.channels.FileChannel;
 import java.rmi.*;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Calculadora extends UnicastRemoteObject implements ICalculadora {
 

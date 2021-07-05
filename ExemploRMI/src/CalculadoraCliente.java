@@ -1,11 +1,7 @@
-import java.io.File;
 import java.net.MalformedURLException;
 import java.rmi.*;
 import java.awt.*;
 import java.util.Arrays;
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.awt.event.*;
 
 public class CalculadoraCliente {
