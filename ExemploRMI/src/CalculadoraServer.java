@@ -5,6 +5,16 @@ import java.rmi.registry.Registry;
 import java.util.Arrays;
 import java.rmi.server.UnicastRemoteObject;
 
+/**
+ * O aplicação do servidor usa o método createRegistry da classe
+ * LocateRegistry para criar rmiregistry na JVM do servidor com
+ * o número da porta passado como argumento.
+ *
+ * O método rebind da classe Naming é usado para vincular o objeto
+ * remoto ao novo nome.
+ *
+ * O objeto Skeleton passa a solicitação do objeto Stub para o objeto remoto
+ */
 public class CalculadoraServer {
     public static String nameService = "ServerJM";
     

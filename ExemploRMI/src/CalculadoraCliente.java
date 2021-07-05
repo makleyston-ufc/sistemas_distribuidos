@@ -19,6 +19,16 @@ public class CalculadoraCliente {
 		try {
 			System.out.println(Arrays.toString(Naming.list("ServerJM")));
 
+			/**
+			 * O método lookup da classe Naming é usado para obter a referência
+			 * do objeto Stub.
+			 *
+			 * O objeto Stub cria um bloco de informações e envia essas informações 
+			 * ao servidor. O bloco consiste em:
+			 * > Um identificador do objeto remoto a ser usado
+			 * > Nome do método que deve ser invocado
+			 * > Parâmetros para a JVM remoto
+			 */
 			calc = (ICalculadora) Naming.lookup("ServerJM");
 
 			if(!calc.getStatus().equals("Ok")){
