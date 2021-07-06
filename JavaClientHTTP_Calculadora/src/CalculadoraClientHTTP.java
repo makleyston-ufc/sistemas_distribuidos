@@ -18,7 +18,7 @@ public class CalculadoraClientHTTP {
 
 	public static void main(String[] args) {
 
-        Calculadora calc = new Calculadora();
+        InterfaceCalc calc = new InterfaceCalc();
         calc.setVisible(true);
 		
         calc.igual.addActionListener(new ActionListener() {
