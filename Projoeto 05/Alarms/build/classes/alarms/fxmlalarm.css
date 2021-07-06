@@ -1,0 +1,27 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+
+
+.labelAlarm {
+    -fx-font-size: 100pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #dedede;
+}
+
+.tableAlarm {
+    -fx-padding: 10;
+    /*-fx-border-style: solid inside;*/
+    /*-fx-border-width: 2;*/
+/*    -fx-border-insets: 5;
+    -fx-border-radius: 5;*/
+    -fx-border-color: blue;
+}
