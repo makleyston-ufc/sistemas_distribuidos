@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Calculadora extends JFrame {
+public class InterfaceCalc extends JFrame {
 
     private JButton numero0;
     private JButton numero1;
@@ -30,7 +30,7 @@ public class Calculadora extends JFrame {
     public double dot;
     public boolean isdot;
 
-    public Calculadora() {
+    public InterfaceCalc() {
 
         this.setTitle("Calculadora Remota");
         this.setBounds(500, 300, 295, 420); // x, y, width, height
@@ -233,7 +233,7 @@ public class Calculadora extends JFrame {
         this.somar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 operacao = 1;
-                operando = isdot ? dot + leitura / 10.0 : leitura;
+                operando = isdot ? dot + leitura / 10 : leitura;
                 dot = 0; leitura = 0; isdot = false;
                 display.setText(operando + " + ");
             }
@@ -242,7 +242,7 @@ public class Calculadora extends JFrame {
         this.subtrair.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 operacao = 2;
-                operando = isdot ? dot + leitura / 10.0 : leitura;
+                operando = isdot ? dot + leitura / 10 : leitura;
                 dot = 0; leitura = 0; isdot = false;
                 display.setText(operando + " - ");
             }
@@ -251,7 +251,7 @@ public class Calculadora extends JFrame {
         this.multiplicar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 operacao = 3;
-                operando = isdot ? dot + leitura / 10.0 : leitura;
+                operando = isdot ? dot + leitura / 10 : leitura;
                 dot = 0; leitura = 0; isdot = false;
                 display.setText(operando + " X ");
             }
@@ -260,7 +260,7 @@ public class Calculadora extends JFrame {
         this.dividir.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 operacao = 4;
-                operando = isdot ? dot + leitura / 10.0 : leitura;
+                operando = isdot ? dot + leitura / 10 : leitura;
                 dot = 0; leitura = 0; isdot = false;
                 display.setText(operando + " / ");
             }
@@ -272,7 +272,7 @@ public class Calculadora extends JFrame {
     }
 
     public double getOper2() {
-        return this.isdot ? this.dot + this.leitura / 10.0 : this.leitura;
+        return this.isdot ? this.dot + this.leitura / 10 : this.leitura;
     }
 
     public int getOperacao() {

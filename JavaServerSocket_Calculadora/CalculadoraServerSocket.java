@@ -42,10 +42,10 @@ public class CalculadoraServerSocket {
 				   result += calc.sub(Double.parseDouble(oper1),Double.parseDouble(oper2));
 				   break;
 				   case 3:
-				   result += calc.div(Double.parseDouble(oper1),Double.parseDouble(oper2));
+				   result += calc.mult(Double.parseDouble(oper1),Double.parseDouble(oper2));
 				   break;
 				   case 4:
-				   result += calc.mult(Double.parseDouble(oper1),Double.parseDouble(oper2));
+				   result += calc.div(Double.parseDouble(oper1),Double.parseDouble(oper2));
 				   break;
 				   default:
 				   result += "Invalid Operation!";

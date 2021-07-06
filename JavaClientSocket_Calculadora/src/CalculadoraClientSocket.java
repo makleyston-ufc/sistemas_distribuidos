@@ -14,7 +14,7 @@ public class CalculadoraClientSocket {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 
-        Calculadora calc = new Calculadora();
+        InterfaceCalc calc = new InterfaceCalc();
         calc.setVisible(true);
 
         // É criada uma Ação que dispara quando o usuário clica no botão de igual.
