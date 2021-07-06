@@ -42,3 +42,21 @@
 4. Execute o cliente
     - Execute dentro do diretório que possui os .class (./bin)
     - `java -Djava.security.policy=policy CalculadoraCliente`
+
+## 4 - Implementação Android
+1. Para utilizar a aplicação via socket com um servidor calculadora
+    - Utilize o servidor socket presente no item #1 deste trabalho
+    - Edite o endereço de IP do servidor socket dentro do arquivo MainApplication 
+    - Compile os arquivos
+2. A comunicação via HTTP já está implementada e não precisa fazer nenhuma alteração nessa implementação
+
+## 5 - Implementação do Sistema de Alarmes
+1. Verifique o endereço de IP do broker MQTT utilizado
+    - Edite os arquivos em cada projeto, inserindo o endereço de IP do broker
+    - CAT: Alterar o arquivo `MqttPublish` inserindo na variável `broker` o endereço IP adequado.
+    - Alarms: Alterar o arquivo `AlarmSubscriber` inserindo na variável `serverURI` o endereço IP adequado.
+    - TemperatureEventGenerator: Alterar o arquivo `MqttPublish` inserindo na variável `broker` o endereço IP adequado.
+2. Compile os códigos
+    - `javac *`
+3. Execute cada projeto
+    - `java [projeto]`
