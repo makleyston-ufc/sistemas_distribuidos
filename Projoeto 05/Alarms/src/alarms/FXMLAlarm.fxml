@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="alarms.FXMLAlarmController">
+  <children>
+    <Label fx:id="lbAlarm" alignment="CENTER" prefHeight="200.0" prefWidth="600.0" styleClass="labelAlarm" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <stylesheets>
+        <URL value="@fxmlalarm.css" />
+      </stylesheets>
+    </Label>
+    <MenuBar layoutX="0.0" layoutY="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TableView id="tbEvents" fx:id="tableView" prefHeight="-1.0" prefWidth="-1.0" styleClass="tableAlarm" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+      <columns>
+        <TableColumn id="colTopic" maxWidth="5000.0" minWidth="10.0" prefWidth="179.0" text="Topic" fx:id="colTopic" />
+        <TableColumn id="colMessage" maxWidth="5000.0" minWidth="10.0" prefWidth="419.0" text="Message" fx:id="colMessage" />
+      </columns>
+      <stylesheets>
+        <URL value="@fxmlalarm.css" />
+      </stylesheets>
+    </TableView>
+  </children>
+  <stylesheets>
+    <URL value="@fxmlalarm.css" />
+  </stylesheets>
+</AnchorPane>
