@@ -126,13 +126,13 @@ public class InterfaceCalc extends JFrame {
         this.multiplicar.setBounds(220, 90, 65, 65);
         this.add(this.multiplicar);
 
-        // Linha 4 ['<']
+        // Linha 4 ['AC']
         this.display = new JTextField();
         this.display.setBounds(10, 20, 205, 65);
         this.add(this.display);
 
         this.numeroD = new JButton();
-        this.numeroD.setText("<");
+        this.numeroD.setText("AC");
         this.numeroD.setBounds(220, 20, 65, 65);
         this.add(this.numeroD);
 
@@ -232,37 +232,57 @@ public class InterfaceCalc extends JFrame {
 
         this.somar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                operacao = 1;
-                operando = isdot ? dot + leitura / 10 : leitura;
-                dot = 0; leitura = 0; isdot = false;
-                display.setText(operando + " + ");
+                try {
+                    leitura = Double.parseDouble(display.getText());
+                    operacao = MathOperation.SUM;
+                    operando = isdot ? dot + leitura / 10 : leitura;
+                    dot = 0; leitura = 0; isdot = false;
+                    display.setText(operando + " + ");
+                } catch (Exception e) {
+                    igual.doClick();
+                }
             }
         });
 
         this.subtrair.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                operacao = 2;
-                operando = isdot ? dot + leitura / 10 : leitura;
-                dot = 0; leitura = 0; isdot = false;
-                display.setText(operando + " - ");
+                try {
+                    leitura = Double.parseDouble(display.getText());
+                    operacao = MathOperation.SUBTRACTION;
+                    operando = isdot ? dot + leitura / 10 : leitura;
+                    dot = 0; leitura = 0; isdot = false;
+                    display.setText(operando + " - ");
+                } catch (Exception e) {
+                    igual.doClick();
+                }
             }
         });
 
         this.multiplicar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                operacao = 3;
-                operando = isdot ? dot + leitura / 10 : leitura;
-                dot = 0; leitura = 0; isdot = false;
-                display.setText(operando + " X ");
+                try {
+                    leitura = Double.parseDouble(display.getText());
+                    operacao = MathOperation.MULTIPLICATION;
+                    operando = isdot ? dot + leitura / 10 : leitura;
+                    dot = 0; leitura = 0; isdot = false;
+                    display.setText(operando + " X ");
+                } catch (Exception e) {
+                    igual.doClick();
+                }
             }
         });
 
         this.dividir.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                operacao = 4;
-                operando = isdot ? dot + leitura / 10 : leitura;
-                dot = 0; leitura = 0; isdot = false;
-                display.setText(operando + " / ");
+                try {
+                    leitura = Double.parseDouble(display.getText());
+                    operacao = MathOperation.DIVISION;
+                    operando = isdot ? dot + leitura / 10 : leitura;
+                    dot = 0; leitura = 0; isdot = false;
+                    display.setText(operando + " / ");
+                } catch (Exception e) {
+                    igual.doClick();
+                }
             }
         });
     }
@@ -283,13 +303,16 @@ public class InterfaceCalc extends JFrame {
         this.display.setText(txt);
     }
 
-    public void setLeitura(double leitura) {
-        this.leitura = leitura;
-    }
-
     public void resetVariaveis() {
         this.dot = 0;
         this.leitura = 0;
         this.isdot = false;
+    }
+
+    static class MathOperation{
+        public final static int SUM = 1;
+        public final static int SUBTRACTION = 2;
+        public final static int MULTIPLICATION = 3;
+        public final static int DIVISION = 4;
     }
 }

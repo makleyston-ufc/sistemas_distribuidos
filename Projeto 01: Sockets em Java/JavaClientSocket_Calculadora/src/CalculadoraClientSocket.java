@@ -46,9 +46,6 @@ public class CalculadoraClientSocket {
                     // Escreve o resultado na interface da calculadora.
                     calc.setDisplay(result);
 
-                    // Atualiza o valor da leitura para o resultado da operação.
-                    calc.setLeitura(Double.parseDouble(result));
-
                     // Imprimindo o resultado
                     System.out.println("resultado = " + result + "\n");
                     clientSocket.close();

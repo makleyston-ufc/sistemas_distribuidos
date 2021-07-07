@@ -54,12 +54,9 @@ public class CalculadoraCliente {
 						System.out.println("resultado = " + result + "\n");
 
 						iCalc.setDisplay(""+result);
-						iCalc.setLeitura(result);
 					} catch (RemoteException e) {
 						System.out.println("Server não encontrado");
 					}
-					
-
 				}
 			});
 		} catch(MalformedURLException | NotBoundException | RemoteException e) {
