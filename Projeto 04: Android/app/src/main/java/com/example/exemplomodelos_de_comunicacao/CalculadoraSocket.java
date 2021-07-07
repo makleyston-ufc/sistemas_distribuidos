@@ -1,8 +1,12 @@
 package com.example.exemplomodelos_de_comunicacao;
 
 import android.os.AsyncTask;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,7 +14,7 @@ import java.net.Socket;
 
 public class CalculadoraSocket extends AsyncTask<Void, Void, String> {
 
-    String oper1,oper2;
+    String oper1, oper2;
     PrecisaCalcular pc;
 
     /* Atributo utilizado para especificar a operação desejada. */
@@ -30,31 +34,31 @@ public class CalculadoraSocket extends AsyncTask<Void, Void, String> {
         String result="";
 
         /* O valor da variável "operacao" é o resultado do mapeamento do "mathOperation" fornecido no
-        * ato da chamada para a execução. */
+         * ato da chamada para a execução. */
         int operacao=mathOperation; //1-somar 2-subtrair 3-dividir 4-multiplicar
 
         try {
             //Conexão com o Servidor
-            Socket clientSocket = new Socket("192.168.100.18", 9090);
+            Socket clientSocket = new Socket("192.168.1.106", 9090);
             DataOutputStream socketSaidaServer = new DataOutputStream(clientSocket.getOutputStream());
 
             //Enviando os dados
             socketSaidaServer.writeBytes(operacao+"\n");
             socketSaidaServer.writeBytes(oper1+ "\n");
-            socketSaidaServer.writeBytes( oper2+ "\n");
+            socketSaidaServer.writeBytes(oper2+ "\n");
             socketSaidaServer.flush();
 
             //Recebendo a resposta
             BufferedReader messageFromServer = new BufferedReader
                     (new InputStreamReader(clientSocket.getInputStream()));
-            result=messageFromServer.readLine();
+            result = messageFromServer.readLine();
+            Log.d("RESULT: ", result);
 
             clientSocket.close();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
         return result;
         //Codigo
@@ -65,7 +69,6 @@ public class CalculadoraSocket extends AsyncTask<Void, Void, String> {
     protected void onPreExecute() {
         //Codigo
     }
-
 
     @Override
     protected void onPostExecute(String result) {
@@ -80,9 +83,9 @@ public class CalculadoraSocket extends AsyncTask<Void, Void, String> {
             result = 1;
         }else if(op == PrecisaCalcular.MathOperation.SUBTRACTION){
             result = 2;
-        }else if(op == PrecisaCalcular.MathOperation.DIVISION) {
+        }else if(op == PrecisaCalcular.MathOperation.MULTIPLICATION) {
             result = 3;
-        } else if(op == PrecisaCalcular.MathOperation.MULTIPLICATION) {
+        }else if(op == PrecisaCalcular.MathOperation.DIVISION) {
             result = 4;
         }
         return result;

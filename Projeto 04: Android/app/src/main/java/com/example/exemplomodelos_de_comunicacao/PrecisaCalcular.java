@@ -9,10 +9,10 @@ public class PrecisaCalcular {
     }
 
     /* Seleção da operação matemática desejada com base no parâmetro "mathOperation".
-    *  Pra cada operação é feita uma chamada específica para atender a solicitação.
-    *  O resultado é armazenado em uma variável que é, posteriormente, apresentada no tv
-    *  por meio do "showResult". */
-    public void calculoLocal(int mathOperation, double value1, double value2){
+     *  Pra cada operação é feita uma chamada específica para atender a solicitação.
+     *  O resultado é armazenado em uma variável que é, posteriormente, apresentada no tv
+     *  por meio do "showResult". */
+    public String calculoLocal(int mathOperation, double value1, double value2){
         Calculadora calc = new Calculadora();
         String result = "";
         switch (mathOperation){
@@ -31,6 +31,7 @@ public class PrecisaCalcular {
 
         }
         this.showResult(result);
+        return result;
     }
 
     /* Seleção da operação matemática desejada com base no parâmetro "mathOperation".
@@ -38,7 +39,6 @@ public class PrecisaCalcular {
     public void calculoRemoto(int mathOperation, double value1, double value2){
         CalculadoraSocket shs = new CalculadoraSocket(this, mathOperation, value1+"", value2+"");
         shs.execute();
-
     }
 
     /* Seleção da operação matemática desejada com base no parâmetro "mathOperation".
@@ -46,18 +46,22 @@ public class PrecisaCalcular {
     public void calculoRemotoHTTP(int mathOperation, double value1, double value2){
         CalculadoraHttpPOST shs = new CalculadoraHttpPOST(this, mathOperation, value1+"", value2+"");
         shs.execute();
-
     }
+
     public void showResult(String result){
         tv.setText(result);
     }
 
+    public String getText() {
+        return tv.getText().toString();
+    }
+
     /* Definição dos métodos implementados. */
     static class MathOperation{
-        public final static int SUM = 0;
-        public final static int SUBTRACTION = 1;
-        public final static int DIVISION = 2;
+        public final static int SUM = 1;
+        public final static int SUBTRACTION = 2;
         public final static int MULTIPLICATION = 3;
+        public final static int DIVISION = 4;
     }
 
 }
