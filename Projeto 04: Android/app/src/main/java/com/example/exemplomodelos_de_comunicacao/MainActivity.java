@@ -189,10 +189,10 @@ public class MainActivity extends AppCompatActivity {
         btnSomar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PrecisaCalcular pc = new PrecisaCalcular(tv);
-                mathOperation = PrecisaCalcular.MathOperation.SUM;
                 try {
                     leitura = Double.parseDouble(tv.getText().toString());
+                    PrecisaCalcular pc = new PrecisaCalcular(tv);
+                    mathOperation = PrecisaCalcular.MathOperation.SUM;
                     oper1 = isdot ? dot + leitura / 10 : leitura;
                     dot = 0; leitura = 0; isdot = false;
                     pc.showResult(oper1 + " + ");
@@ -205,10 +205,10 @@ public class MainActivity extends AppCompatActivity {
         btnSubtrair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PrecisaCalcular pc = new PrecisaCalcular(tv);
-                mathOperation = PrecisaCalcular.MathOperation.SUBTRACTION;
                 try {
                     leitura = Double.parseDouble(tv.getText().toString());
+                    PrecisaCalcular pc = new PrecisaCalcular(tv);
+                    mathOperation = PrecisaCalcular.MathOperation.SUBTRACTION;
                     oper1 = isdot ? dot + leitura / 10 : leitura;
                     dot = 0; leitura = 0; isdot = false;
                     pc.showResult(oper1 + " - ");
@@ -221,10 +221,10 @@ public class MainActivity extends AppCompatActivity {
         btnMultiplicar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PrecisaCalcular pc = new PrecisaCalcular(tv);
-                mathOperation = PrecisaCalcular.MathOperation.MULTIPLICATION;
                 try {
                     leitura = Double.parseDouble(tv.getText().toString());
+                    PrecisaCalcular pc = new PrecisaCalcular(tv);
+                    mathOperation = PrecisaCalcular.MathOperation.MULTIPLICATION;
                     oper1 = isdot ? dot + leitura / 10 : leitura;
                     dot = 0; leitura = 0; isdot = false;
                     pc.showResult(oper1 + " X ");
@@ -237,10 +237,10 @@ public class MainActivity extends AppCompatActivity {
         btnDividir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PrecisaCalcular pc = new PrecisaCalcular(tv);
-                mathOperation = PrecisaCalcular.MathOperation.DIVISION;
                 try {
                     leitura = Double.parseDouble(tv.getText().toString());
+                    PrecisaCalcular pc = new PrecisaCalcular(tv);
+                    mathOperation = PrecisaCalcular.MathOperation.DIVISION;
                     oper1 = isdot ? dot + leitura / 10 : leitura;
                     dot = 0; leitura = 0; isdot = false;
                     pc.showResult(oper1 + " / ");
