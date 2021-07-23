@@ -16,12 +16,10 @@ public class TreeBuild {
 
         ExpressaoOuterClass.Expressao.Builder atual;
         for (String token : tokens) {
-//            System.out.println(token);
             switch (token) {
                 case "(":
                     atual = ExpressaoOuterClass.Expressao.newBuilder();
                     pilha.push(atual);
-//                    System.out.println("pilha size: " + pilha.size());
                     break;
                 case "+":
                 case "-":
@@ -31,9 +29,7 @@ public class TreeBuild {
                     break;
                 case ")":
                     ExpressaoOuterClass.Expressao exp = pilha.pop().build();
-//                    System.out.println("pilha size: " + pilha.size());
                     if (pilha.empty()) {
-//                        System.out.println("Cheguei aqui");
                         return exp;
                     }
                     atual = pilha.peek();
