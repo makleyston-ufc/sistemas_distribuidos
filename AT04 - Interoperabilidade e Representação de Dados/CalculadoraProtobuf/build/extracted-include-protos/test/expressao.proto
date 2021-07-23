@@ -1,0 +1,8 @@
+
+message Expressao {
+  required string operacao = 1;
+  optional Expressao left = 2;
+  optional Expressao right = 3;
+  optional double o1 = 4;
+  optional double o2 = 5;
+}
