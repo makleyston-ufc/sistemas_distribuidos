@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message Filme{
+
+    required int32 FilmeID = 1;
+    required string titulo = 2;
+    required int32 ano = 3;
+    required int32 Avaliacao_IMDB = 4;
+
+    message FilmesRelacionados {
+        required int32 FilmeID = 1;
+        required string titulo = 2;
+        required int32 ano = 3;
+        required int32 Avaliacao_IMDB = 4;
+    }
+
+    repeated FilmesRelacionados tres_filmes_mais_relacionados = 5;
+    required string URL = 6;
+
+}
+
+message Filmes{
+
+    repeated Filme filmes = 1;
+
+}

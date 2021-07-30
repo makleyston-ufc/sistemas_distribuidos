@@ -1,0 +1,320 @@
+[
+
+	{
+		"FilmeID" : 201400001234,
+		"titulo" : "A culpa é das estrelas",
+		"ano" : 2014,
+		"Avaliacao_IMDB" : 7,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" : 201900012466,
+                "titulo" : "A cinco passos de você",
+                "ano": 2019,
+                "Avaliacao_IMDB": 7
+			},
+			{
+                "FilmeID" : 201622012876,
+                "titulo" : "Como eu era antes de você",
+                "ano": 2016,
+                "Avaliacao_IMDB" : 7
+			},
+			{ 
+                "FilmeID" : 201411202150,
+                "titulo" : "Diário de uma paixão",
+                "ano": 2014,
+                "Avaliacao_IMDB" : 8
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/lFOOZJ1UChg"
+	},
+	
+
+    
+    {
+		"FilmeID" : 201802309976,
+		"titulo" : "Venom",
+		"ano" : 2018,
+		"Avaliacao_IMDB" : 7,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" : 201866992256,
+                "titulo" : "Deadpool 2",
+                "ano": 2018,
+                "Avaliacao_IMDB": 8
+			},
+			{
+                "FilmeID" : 201676912616,
+                "titulo" : "Deadpool",
+                "ano": 2016,
+                "Avaliacao_IMDB" : 8
+			},
+			{ 
+                "FilmeID" : 201852264100,
+                "titulo" : "Aquaman",
+                "ano": 2018,
+                "Avaliacao_IMDB" : 7
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/u9Mv98Gr5pY"
+	},
+
+
+    {
+		"FilmeID" : 1988889188,
+		"titulo" : "A bolha assassina",
+		"ano" : 1988,
+		"Avaliacao_IMDB" : 6,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" : 198558911985,
+                "titulo" : "A volta dos mortos vivos",
+                "ano": 1985,
+                "Avaliacao_IMDB": 7
+			},
+			{
+                "FilmeID" : 198889982111,
+                "titulo" : "A vigança do diabo",
+                "ano": 1988,
+                "Avaliacao_IMDB" : 6
+			},
+			{ 
+                "FilmeID" : 198600000100,
+                "titulo" : "Noite dos arrepios",
+                "ano": 1986,
+                "Avaliacao_IMDB" : 7
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/vq0our4mceQ"
+	},
+    
+
+    {
+		"FilmeID" : 2021219964,
+		"titulo" : "Luca",
+		"ano" : 2021,
+		"Avaliacao_IMDB" : 8,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" :202143161335,
+                "titulo" : "Raya e o último dragão",
+                "ano": 2021,
+                "Avaliacao_IMDB": 7
+			},
+			{
+                "FilmeID" : 202010032877,
+                "titulo" : "Soul",
+                "ano": 2020,
+                "Avaliacao_IMDB" : 8
+			},
+			{ 
+                "FilmeID" : 201775101163,
+                "titulo" : "Viva: a vida é uma festa",
+                "ano": 2017,
+                "Avaliacao_IMDB" : 8
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/E7_4ZUpyoWM"
+	},
+    
+
+    {
+		"FilmeID" : 2009279300,
+		"titulo" : "Avatar",
+		"ano" : 2009,
+		"Avaliacao_IMDB" : 8,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" :201540533359,
+                "titulo" : "Perdido em marte",
+                "ano": 2015,
+                "Avaliacao_IMDB": 8
+			},
+			{
+                "FilmeID" : 199700000012,
+                "titulo" : "Titanic",
+                "ano": 1997,
+                "Avaliacao_IMDB" : 8
+			},
+			{ 
+                "FilmeID" : 201365100131,
+                "titulo" : "Gravidade",
+                "ano": 2013,
+                "Avaliacao_IMDB" : 8
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/5PSNL1qE6VY"
+	},
+
+
+    {
+		"FilmeID" : 2015689900,
+		"titulo" : "O regresso",
+		"ano" : 2015,
+		"Avaliacao_IMDB" : 8,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" :201540533359,
+                "titulo" : "Perdido em marte",
+                "ano": 2015,
+                "Avaliacao_IMDB": 8
+			},
+			{
+                "FilmeID" : 201701002212,
+                "titulo" : "Dunkirk",
+                "ano": 2017,
+                "Avaliacao_IMDB" : 8
+			},
+			{ 
+                "FilmeID" : 201555137160,
+                "titulo" : "Os oito odiados",
+                "ano": 2015,
+                "Avaliacao_IMDB" : 8
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/S4PpYv9n0ko"
+	},
+
+    {
+		"FilmeID" : 1996699916,
+		"titulo" : "O professor aloprado",
+		"ano" : 1996,
+		"Avaliacao_IMDB" : 6,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" :200044533360,
+                "titulo" : "O professor aloprado 2: a familia klump",
+                "ano": 2000,
+                "Avaliacao_IMDB": 4
+			},
+			{
+                "FilmeID" : 200700000007,
+                "titulo" : "Norbit, uma comédia de peso",
+                "ano": 2007,
+                "Avaliacao_IMDB" : 4
+			},
+			{ 
+                "FilmeID" : 199444411222,
+                "titulo" : "Um tira da pesada III",
+                "ano": 1994,
+                "Avaliacao_IMDB" : 6
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/o3wJ-jzZqBw"
+	},
+
+
+    {
+		"FilmeID" : 199700000012,
+		"titulo" : "Titanic",
+		"ano" : 1997,
+		"Avaliacao_IMDB" : 8,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" : 2009279300,
+		        "titulo" : "Avatar",
+		        "ano" : 2009,
+		        "Avaliacao_IMDB" : 8
+			},
+			{
+                "FilmeID" : 2015689900,
+		        "titulo" : "O regresso",
+		        "ano" : 2015,
+		        "Avaliacao_IMDB" : 8
+			},
+			{ 
+                "FilmeID" : 201315137724,
+                "titulo" : "O lobo de wall street",
+                "ano": 2013,
+                "Avaliacao_IMDB" : 8
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/kVrqfYjkTdQ"
+	},
+
+    {
+		"FilmeID" : 201335167836,
+		"titulo" : "Família do bagulho",
+		"ano" : 2013,
+		"Avaliacao_IMDB" : 7,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" : 201111900023,
+		        "titulo" : "Quero matar meu chefe",
+		        "ano" : 2011,
+		        "Avaliacao_IMDB" : 7
+			},
+			{
+                "FilmeID" : 200900001004,
+		        "titulo" : "Se beber não case",
+		        "ano" : 2009,
+		        "Avaliacao_IMDB" : 8
+			},
+			{ 
+                "FilmeID" : 201215137724,
+                "titulo" : "Anjos da lei",
+                "ano": 2012,
+                "Avaliacao_IMDB" : 7
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/uOuNeBIiYZE"
+	},
+
+
+    {
+		"FilmeID" : 200900001004,
+		"titulo" : "Se beber não case",
+		"ano" : 2009,
+		"Avaliacao_IMDB" : 8,
+		"tres_filmes_mais_relacionados" : [
+		
+			{ 
+                "FilmeID" : 201100001004,
+		        "titulo" : "Se beber não case! Parte II",
+		        "ano" : 2011,
+		        "Avaliacao_IMDB" : 6
+			},
+			{
+                "FilmeID" : 201300001004,
+		        "titulo" : "Se beber não case! Parte III",
+		        "ano" : 2013,
+		        "Avaliacao_IMDB" : 5
+			},
+			{ 
+                "FilmeID" : 201215137724,
+                "titulo" : "Anjos da lei",
+                "ano": 2012,
+                "Avaliacao_IMDB" : 7
+			}
+		
+		],
+
+		"linkparaTraillerNoYoutube" : "https://youtu.be/jOQMBfWMMsU"
+	}
+]
